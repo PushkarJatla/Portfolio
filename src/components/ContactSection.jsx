@@ -16,7 +16,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-    const [form, setForm] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
@@ -126,11 +126,11 @@ export const ContactSection = () => {
 
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
+
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -146,6 +146,8 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="Enter your name"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
                 />
               </div>
 
@@ -164,6 +166,8 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="Enter your email"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
                 />
               </div>
 
@@ -181,6 +185,8 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
                   placeholder="Your message here"
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
                 />
               </div>
 
@@ -198,7 +204,7 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </section>
   );
 };
