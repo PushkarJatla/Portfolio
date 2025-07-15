@@ -20,8 +20,7 @@
   --animate-meteor: meteor 5s linear infinite;
 
   @keyframes float {
-    0%,
-    100% {
+    0%, 100% {
       transform: translateY(0);
     }
     50% {
@@ -29,8 +28,7 @@
     }
   }
   @keyframes pulse-subtle {
-    0%,
-    100% {
+    0%, 100% {
       opacity: 1;
     }
     50% {
@@ -69,8 +67,8 @@
 
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 0 0% 100%;
 
     --border: 214 32% 91%;
   }
@@ -81,8 +79,8 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 0 0% 100%;
 
     --border: 217 33% 20%;
   }
@@ -124,7 +122,7 @@
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5); /* Adjusted for sky blue */
 }
 
 @utility card-hover {
@@ -140,7 +138,7 @@
 
 @utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(59,130,246,0.5)]
          hover:scale-105 active:scale-95;
 }
 

@@ -32,19 +32,19 @@ useEffect(() => {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-     className={cn(
-  "fixed top-4 left-1/2 transform -translate-x-1/2 sm:top-5 sm:right-5 z-50 p-2 rounded-full transition-colors duration-300",
-  "focus:outline-none"
-)}
+  <button
+  onClick={toggleTheme}
+  className={cn(
+    "fixed top-4 z-50 p-2 rounded-full transition-colors duration-300 focus:outline-none",
+    "left-1/2 transform -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:top-5 sm:right-5"
+  )}
+>
+  {isDarkMode ? (
+    <Sun className="h-6 w-6 text-yellow-300" />
+  ) : (
+    <Moon className="h-6 w-6 text-blue-900" />
+  )}
+</button>
 
-    >
-      {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
-      ) : (
-        <Moon className="h-6 w-6 text-blue-900" />
-      )}
-    </button>
   );
 };
