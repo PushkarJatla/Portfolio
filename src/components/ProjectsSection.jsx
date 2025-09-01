@@ -8,7 +8,7 @@ const projects = [
     description: "A web application that helps users instantly find nearby food vendors with one click — including small-scale vendors who often go unnoticed. Vendors can apply, get verified, and reach more customers through the platform.",
     image: "/projects/project5.png",
     tags: ["React", "TailwindCSS", "NodeJS", "MongoDB"],
-    demoUrl: "https://crave-it-app.vercel.app/",
+    demoUrl: "https://crave-it-app.vercel.app",
     githubUrl: "https://github.com/PushkarJatla/craveIt-app"
   },
   {
