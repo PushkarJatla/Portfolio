@@ -8,7 +8,7 @@ const projects = [
     description: "A full-stack web application enabling one-click discovery of nearby food vendors, increasing visibility for small-scale vendors.",
     image: "/projects/project5.png",
     tags: ["React", "TailwindCSS", "NodeJS", "MongoDB"],
-    demoUrl: "https://crave-it-app.vercel.app",
+    demoUrl: "https://crave-it-app.vercel.app/",
     githubUrl: "https://github.com/PushkarJatla/craveIt-app"
   },
   {
