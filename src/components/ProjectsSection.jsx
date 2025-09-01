@@ -1,8 +1,18 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
+
   {
     id: 1,
+    title: "CraveIt - Your Gateway to Hidden Food Gems",
+    description: "A web application that helps users instantly find nearby food vendors with one click — including small-scale vendors who often go unnoticed. Vendors can apply, get verified, and reach more customers through the platform.",
+    image: "/projects/project5.png",
+    tags: ["React", "TailwindCSS", "NodeJS", "MongoDB"],
+    demoUrl: "https://crave-it-app.vercel.app/",
+    githubUrl: "https://github.com/PushkarJatla/craveIt-app"
+  },
+  {
+    id: 2,
     title: "CompareWise - Buy Smart, Save Big",
     description: "Helps you compare products across top shopping sites to find the best deals, ratings, and reviews — all in one place.",
     image: "/projects/project1.png",
@@ -11,7 +21,7 @@ const projects = [
     githubUrl: "https://github.com/PushkarJatla/nextjs-tailwind-optibuy-app",
   },
   {
-    id: 2,
+    id: 3,
     title: "ManageMate - Employee Management Dashboard",
     description:
       "A robust and efficient dashboard for managing, tracking, and organizing employee information with ease and accuracy.",
@@ -21,21 +31,11 @@ const projects = [
     githubUrl: "https://github.com/PushkarJatla/responsive-react-emp-dashboard",
   },
   {
-    id: 3,
-    title: "Code Circle - Collaborative Coding Platform",
-    description:
-      "A real-time collaborative code editor that enables teams to write, edit, and debug code together seamlessly.",
-    image: "/projects/project3.png",
-    tags: ["ReactJs", "ExpressJs", "Socket.io"],
-    demoUrl: "https://realtime-code-editor-ashy.vercel.app/",
-    githubUrl: "https://github.com/PushkarJatla/realtime-code-editor",
-  },
-  {
     id: 4,
     title: "TownVoice - Waste Management System",
     description: "A smart waste management system that streamlines garbage collection, tracking, and reporting for cleaner communities.",
     image: "/projects/project4.png",
-    tags: ["ReactJs","NodeJs", "MongoDB"],
+    tags: ["ReactJs", "NodeJs", "MongoDB"],
     demoUrl: "https://github.com/PushkarJatla/final-year-frontend-townvoice",
     githubUrl: "https://github.com/PushkarJatla/final-year-frontend-townvoice",
   }
