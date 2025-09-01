@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: "CraveIt - Your Gateway to Hidden Food Gems",
-    description: "A web application that helps users instantly find nearby food vendors with one click — including small-scale vendors who often go unnoticed. Vendors can apply, get verified, and reach more customers through the platform.",
+    description: "A full-stack web application enabling one-click discovery of nearby food vendors, increasing visibility for small-scale vendors.",
     image: "/projects/project5.png",
     tags: ["React", "TailwindCSS", "NodeJS", "MongoDB"],
     demoUrl: "https://crave-it-app.vercel.app",
