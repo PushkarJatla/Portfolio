@@ -4,7 +4,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-28 pb-10"
     >
       {/* Background grid */}
       <div className="absolute inset-0 grid-pattern opacity-40" />
@@ -39,23 +39,23 @@ export const HeroSection = () => {
           </p>
 
           {/* Tech line */}
-          <div className="flex flex-wrap items-center gap-2 opacity-0 animate-fade-up-delay-3">
-            <span className="text-xs font-mono text-muted-foreground tracking-wider uppercase">Stack:</span>
+          <div className="flex flex-wrap items-center gap-2.5 opacity-0 animate-fade-up-delay-3">
+            <span className="text-xs font-mono text-muted-foreground tracking-wider uppercase mr-1">Stack:</span>
             {["React", "Next.js", "FastAPI", "LangChain", "OpenAI", "AWS"].map((tech) => (
               <span key={tech} className="tag-pill">{tech}</span>
             ))}
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-4 pt-2 opacity-0 animate-fade-up-delay-4">
-            <a href="#projects" className="btn-primary" id="hero-view-work">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 opacity-0 animate-fade-up-delay-4">
+            <a href="#projects" className="btn-primary justify-center" id="hero-view-work">
               View My Work
               <ArrowRight size={16} />
             </a>
             <a
               href="/LatestResume-PushkarJatla.pdf"
               download
-              className="btn-outline"
+              className="btn-outline justify-center"
               id="hero-download-resume"
             >
               <Download size={16} />

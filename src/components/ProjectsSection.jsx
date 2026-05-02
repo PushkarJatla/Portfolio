@@ -89,7 +89,7 @@ export const ProjectsSection = () => {
   const [expandedProject, setExpandedProject] = useState(null);
 
   return (
-    <section id="projects" className="section-padding px-4 relative">
+    <section id="projects" className="section-padding px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section header */}
         <div className="max-w-3xl mb-16">

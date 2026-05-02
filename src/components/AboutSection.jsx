@@ -35,7 +35,7 @@ const highlights = [
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="section-padding px-4 relative">
+    <section id="about" className="section-padding px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-6xl">
         {/* Section header */}
         <div className="max-w-3xl mb-16">

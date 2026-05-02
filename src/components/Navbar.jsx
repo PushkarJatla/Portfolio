@@ -27,15 +27,15 @@ export const Navbar = () => {
       className={cn(
         "fixed w-full z-50 transition-all duration-500",
         isScrolled
-          ? "py-3 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-sm"
+          ? "py-3 bg-background/90 backdrop-blur-xl border-b border-border/50 shadow-sm"
           : "py-5 bg-transparent"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#hero"
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-2 group relative z-50"
           id="nav-logo"
         >
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-sm transition-transform duration-300 group-hover:scale-110">
@@ -71,29 +71,29 @@ export const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50 rounded-lg hover:bg-muted/50 transition-colors"
+          className="md:hidden p-2 -mr-2 text-foreground relative z-50 rounded-lg hover:bg-muted/50 transition-colors"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
           id="mobile-menu-toggle"
         >
-          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Mobile Menu Overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/98 backdrop-blur-2xl z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-background/98 backdrop-blur-3xl z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-center space-y-8 w-full px-6">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-2xl font-medium text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-2xl font-medium text-foreground/80 hover:text-primary transition-colors duration-300 w-full text-center py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -102,7 +102,7 @@ export const Navbar = () => {
             <a
               href="/LatestResume-PushkarJatla.pdf"
               download
-              className="btn-primary mt-4"
+              className="btn-primary mt-6 w-full max-w-[200px] justify-center"
               onClick={() => setIsMenuOpen(false)}
             >
               Download Resume

@@ -29,7 +29,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding px-4 relative bg-surface/50">
+    <section id="contact" className="section-padding px-4 sm:px-6 lg:px-8 relative bg-surface/50">
       <div className="container mx-auto max-w-6xl">
         {/* Section header */}
         <div className="max-w-3xl mb-16">
